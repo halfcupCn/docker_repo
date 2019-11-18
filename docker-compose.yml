@@ -1,0 +1,9 @@
+version: '1'
+services:
+  bullshit:
+    image: "nginx:latest"
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - /var/bullshit:/usr/share/nginx/html/bullshit
